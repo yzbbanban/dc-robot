@@ -11,9 +11,14 @@ public class DiscordrobotApplication {
     public static void main(String[] args) {
         SpringApplication.run(DiscordrobotApplication.class, args);
         try {
-            JDA jda = JDABuilder.createDefault("your token").build().awaitReady();
-            Thread.sleep(10000);
-            jda.addEventListener(new MessageEvent());
+            String token = "--your--token--";
+            // Note: It is important to register your ReadyListener before building
+            JDA jda = JDABuilder.createDefault(token)
+                    .addEventListeners(new MessageEvent())
+                    .build();
+
+            // optionally block until JDA is ready
+            jda.awaitReady();
         } catch (Exception e) {
             e.printStackTrace();
         }

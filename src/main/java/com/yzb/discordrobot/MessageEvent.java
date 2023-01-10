@@ -1,11 +1,13 @@
 package com.yzb.discordrobot;
 
+import com.sun.istack.internal.NotNull;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.entities.channel.ChannelType;
+import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -20,6 +22,8 @@ public class MessageEvent extends ListenerAdapter {
         }
 
         Message message = event.getMessage();
+
+        System.out.println(event.getMessage().getContentDisplay());
 
         //获取服务器（公会）信息
         Guild guild = message.getGuild();
