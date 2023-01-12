@@ -21,7 +21,6 @@ The following guides illustrate how to use some features concretely:
 ## 资料
 
 https://jda.wiki/introduction/events/
-https://blog.csdn.net/qq_38490457/article/details/125250135
 
 说明：
 
