@@ -1,6 +1,5 @@
-package com.yzb.discordrobot;
+package com.yzb.discordrobot.jda;
 
-import com.sun.istack.internal.NotNull;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.*;
@@ -14,7 +13,7 @@ import java.util.List;
 
 public class MessageEvent extends ListenerAdapter {
     @Override
-    public void onMessageReceived(@NotNull MessageReceivedEvent event) {
+    public void onMessageReceived(MessageReceivedEvent event) {
         //如果是机器人发消息触发这个事件则忽略
         //如果不加，则这个事件会变成死循环事件
         if (event.getAuthor().isBot()) {
