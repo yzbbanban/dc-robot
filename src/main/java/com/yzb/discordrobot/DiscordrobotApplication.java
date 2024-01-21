@@ -22,7 +22,7 @@ import java.time.Duration;
 @SpringBootApplication(scanBasePackages = {"com.yzb"})
 public class DiscordrobotApplication {
 
-    private static String token = "MTA2MzI3NTU4OTgxNDk5NzA2Mg.GcKWJ4.6FoOdG2yophD7ivAet5WO2_wWbq4BQbXLOkCEQ";
+    private static String token = "MTA2MzI3NTU4OTgxNDk5NzA2Mg.GcaYVu.7o8zcu7i8hga_nrIBFqUu79-YW8POd2C5l25Z4";
 
     public static void main(String[] args) {
         SpringApplication.run(DiscordrobotApplication.class, args);
